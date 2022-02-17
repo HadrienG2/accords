@@ -8,8 +8,8 @@ const BASIC_TRIAD: [&[&str]; 2] = [
     /* Minor */ &["m", "-"],
 ];
 const ADVANCED_TRIAD: [&[&str]; 3] = [
-    /* Augmented */ &["o"],
-    /* Diminished */ &["+"],
+    /* Augmented */ &["+"],
+    /* Diminished */ &["o"],
     /* Suspended 4th */ &["sus4"],
 ];
 
@@ -22,11 +22,10 @@ const ADVANCED_SEVENTH: [&[&str]; 3] = [
     /* Half-diminished */ &["m7b5", "-7b5", "ø", "ø7", "m7o5", "-7o5"],
     /* Diminished */ &["o7"],
 ];
-const RARE_SEVENTH: [&[&str]; 5] = [
+const RARE_SEVENTH: [&[&str]; 4] = [
     /* Minor-major */ &["mM7", "m#7", "-M7", "-Δ7", "-Δ"],
     /* Augmented major */ &["+M7", "+Δ", "M7#5", "M7+5", "Δ7#5", "Δ7+5"],
     /* Augmented */ &["+7", "7#5", "7+5"],
-    /* Diminished */ &["o7"],
     /* Seventh flat five */ &["7b5"],
 ];
 
