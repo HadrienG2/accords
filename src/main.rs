@@ -3,15 +3,13 @@ use rand::prelude::*;
 const UNALTERED_ROOT: [&str; 7] = ["A", "B", "C", "D", "E", "F", "G"];
 const ALTERED_ROOT: [&str; 10] = ["Ab", "A#", "Bb", "C#", "Db", "D#", "Eb", "F#", "Gb", "G#"];
 
-const BASIC_TRIAD: [&[&str]; 2] = [
+const BASIC_TRIAD: [&[&str]; 4] = [
     /* Major */ &["", "M", "Δ"],
     /* Minor */ &["m", "-"],
-];
-const ADVANCED_TRIAD: [&[&str]; 3] = [
-    /* Augmented */ &["+"],
-    /* Diminished */ &["o"],
     /* Suspended 4th */ &["sus4"],
+    /* Suspended 2nd */ &["sus2"],
 ];
+const ADVANCED_TRIAD: [&[&str]; 2] = [/* Augmented */ &["+"], /* Diminished */ &["o"]];
 
 const BASIC_SEVENTH: [&[&str]; 2] = [
     /* Major */ &["M7", "Δ7"],
@@ -29,10 +27,10 @@ const RARE_SEVENTH: [&[&str]; 4] = [
     /* Seventh flat five */ &["7b5"],
 ];
 
-const ENABLE_ALTERED_ROOT: bool = false;
+const ENABLE_ALTERED_ROOT: bool = true;
 const ENABLE_ADVANCED_TRIAD: bool = false;
-const ENABLE_BASIC_SEVENTH: bool = false;
-const ENABLE_ADVANCED_SEVENTH: bool = false;
+const ENABLE_BASIC_SEVENTH: bool = true;
+const ENABLE_ADVANCED_SEVENTH: bool = true;
 const ENABLE_RARE_SEVENTH: bool = false;
 
 const MAX_CHARS_PER_LINE: usize = 40;
