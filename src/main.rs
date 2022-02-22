@@ -6,7 +6,7 @@ const ALTERED_ROOT: [&str; 10] = ["Ab", "A#", "Bb", "C#", "Db", "D#", "Eb", "F#"
 const BASIC_TRIAD: [&[&str]; 4] = [
     /* Major */ &["", "M", "Δ"],
     /* Minor */ &["m", "-"],
-    /* Suspended 4th */ &["sus4"],
+    /* Suspended 4th */ &["sus4", "sus"],
     /* Suspended 2nd */ &["sus2"],
 ];
 const ADVANCED_TRIAD: [&[&str]; 2] = [/* Augmented */ &["+"], /* Diminished */ &["o"]];
@@ -34,7 +34,7 @@ const ENABLE_ADVANCED_SEVENTH: bool = true;
 const ENABLE_RARE_SEVENTH: bool = false;
 
 const MAX_CHARS_PER_LINE: usize = 40;
-const NUM_LINES: usize = 19;
+const NUM_LINES: usize = 19 * 2;
 
 fn main() {
     let mut roots = UNALTERED_ROOT.into_iter().collect::<Vec<_>>();
